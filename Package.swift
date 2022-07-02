@@ -24,12 +24,6 @@ let package = Package(
         .target(
             name: "NetworkSDK",
             dependencies: [.product(name: "OrderedCollections", package: "swift-collections")]),
-//        exclude: ["instructions.md"],
-//         resources: [
-//             .process("text.txt"),
-//             .process("example.png"),
-//             .copy("settings.plist")
-//         ]
         .testTarget(
             name: "NetworkSDKTests",
             dependencies: ["NetworkSDK"]),
