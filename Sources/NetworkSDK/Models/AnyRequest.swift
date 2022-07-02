@@ -7,8 +7,7 @@
 
 import Foundation
 
-
-public struct AnyRequest: Request {
+struct AnyRequest: Request {
     public var identifier: RequestIdentifier
     public var urlRequest: URLRequest
     public var attempt: Int = 0
